@@ -1,5 +1,27 @@
-theme: jekyll-theme-hacker
 
-title: Pedro Bonifacio
+title: "Pedro Bonifácio | C++ Systems Engineering"
+description: "Writing about modern C++, Windows internals, debugging, networking, and building reliable systems."
+timezone: America/Sao_Paulo
 
-show_downloads: false
+# GitHub Pages
+url: "https://p-eight.github.io"
+baseurl: ""
+
+# Jekyll
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Files excluded from the generated website
+exclude:
+  - AGENTS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .gitignore
+  - .github/

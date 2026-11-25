@@ -1,0 +1,23 @@
+
+# Jekyll generated site
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler dependencies and local configuration
+vendor/
+.bundle/
+
+# Ruby
+*.gem
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db

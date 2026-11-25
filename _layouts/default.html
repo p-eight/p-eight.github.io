@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="{{ '/' | relative_url }}">Pedro Bonifacio<span class="accent"></span> <span class="wordmark-muted">/ systems engineering</span></a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/blog/' | relative_url }}">Writing</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </header>
+    <main id="main-content">{{ content }}</main>
+    <footer class="site-footer">
+      <span>© {{ 'now' | date: '%Y' }} Pedro Bonifácio</span>
+      <span><a href="https://github.com/p-eight">GitHub</a> · <a href="https://www.linkedin.com/in/pedrohenriquebonifacio/">LinkedIn</a></span>
+    </footer>
+  </div>
+</body>
+</html>
