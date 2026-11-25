@@ -85,11 +85,11 @@ Production URL: https://p-eight.github.io/
 To configure deployment:
 
 1. Open the repository's **Settings → Pages**.
-2. Select **Deploy from a branch**.
-3. Select `main` and `/ (root)`.
-4. Save the configuration.
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
 
-GitHub Pages builds and publishes the website when changes are pushed to the configured branch.
+The workflow in `.github/workflows/pages.yml` builds with Ruby 3.4 and the
+dependencies in `Gemfile.lock`, then publishes the website on pushes to `main`.
+It can also be run manually with **Run workflow**.
 
 ## Project Structure
 
